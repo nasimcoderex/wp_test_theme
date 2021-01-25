@@ -1,4 +1,13 @@
-<?php /* Template Name: Page */ ?>
+<?php
+/* Template Name: Page
+ * Description: For showing all posts 
+ * @package WordPress
+ * @subpackage test
+ * @since test 1.0.0
+*/ 
+
+
+?>
 <?php get_header()?>
 <body <?php body_class() ?> class="single">
 <?php get_template_part( "nav" ) ?>

@@ -1,3 +1,11 @@
+<?php 
+/*
+ * Description: General banner section
+ * @package WordPress
+ * @subpackage test
+ * @since test 1.0.0
+*/ 
+?>
 <?php $featured_img = get_the_post_thumbnail_url( null, "large" )?>
 
 <div class="hero">

@@ -1,7 +1,14 @@
 
 
 
-
+<?php 
+/* 
+ * Description: For showing navbar information 
+ * @package WordPress
+ * @subpackage test
+ * @since test 1.0.0
+*/ 
+?>
 <!-- Add your site or application content here -->
 
   <header class="header-two">

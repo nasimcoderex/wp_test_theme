@@ -1,4 +1,11 @@
-<?php /* Template Name: Single project */ ?>
+<?php 
+/* Template Name: Single project 
+ *  Description: For showing single project  
+ * @package WordPress
+ * @subpackage test
+ * @since test 1.0.0
+*/ 
+?>
 <?php get_header()?>
 <body <?php body_class() ?>>
 <?php get_template_part( "nav" ) ?>

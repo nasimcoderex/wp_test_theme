@@ -1,4 +1,12 @@
-<?php /* Template Name: Blog */ ?>
+<?php 
+/* Template Name: Blog 
+
+ * Description: For showing all blogs 
+ * @package WordPress
+ * @subpackage test
+ * @since test 1.0.0
+*/ 
+?>
 <?php get_header()?>
 <body <?php body_class() ?> class="single">
 <?php get_template_part( "nav" ) ?>

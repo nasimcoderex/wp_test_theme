@@ -1,6 +1,13 @@
 
+<?php 
+/* Template Name: Home 
+ * Description: Front page
+ * @package WordPress
+ * @subpackage test
+ * @since test 1.0.0
+*/ 
 
-<?php /* Template Name: Home */ ?>
+?>
 <?php get_header()?>
 <body <?php body_class() ?> class="single">
 <?php get_template_part( "nav" ) ?>
