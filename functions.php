@@ -1,4 +1,10 @@
 <?php
+/**
+ * test_bootstrapping
+ *
+ * load text domain and support feature image, tag
+ *
+ */
 function test_bootstrapping(){
     load_theme_textdomain( "test");
     add_theme_support( 'post-thumbnails' );
@@ -9,6 +15,12 @@ function test_bootstrapping(){
 }
 add_action( "after_setup_theme","test_bootstrapping");
 
+/**
+ * test_assets
+ *
+ * enqueue all stricts and style file 
+ *
+ */
 function test_assets(){
     wp_enqueue_style( "test",get_stylesheet_uri(),null,time());
     // wp_enqueue_style( 'bootstrap', '//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"' );
@@ -36,6 +48,12 @@ function test_assets(){
 }
 add_action( "wp_enqueue_scripts","test_assets");
 
+/**
+ * alpha_sidebar
+ *
+ * Register new sidebar named Social link
+ *
+ */
 function alpha_sidebar(){
     register_sidebar( 
         array(
@@ -53,6 +71,10 @@ function alpha_sidebar(){
 }
 add_action( "widgets_init","alpha_sidebar");
 
+/**
+ * woocommerce support start
+ *
+ */
 function test_add_woocommerce_support() {
     add_theme_support( 'woocommerce' );
 }
@@ -67,7 +89,10 @@ function test_wrapper_start(){
 function test_wrapper_end(){
     echo '</section>';
 }
-
+/**
+ * woocommerce support end
+ *
+ */
 
 
 
